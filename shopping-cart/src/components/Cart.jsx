@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import './Cart.css'
 import { useId } from 'react'
 import { CartIcon, ClearCartIcon } from './Icons.jsx'
@@ -8,7 +9,7 @@ export const Cart = () => {
   const {cart, clearCart, addToCart} = useCart()
 
   const CartItem = ({thumbnail, price, title, quantity, addToCart}) => {
-    <il>
+   return ( <il>
       <img
         src={thumbnail}
         alt={title}
@@ -23,7 +24,7 @@ export const Cart = () => {
         </small>
         <button onClick={addToCart}>+</button>
       </footer>
-    </il>
+    </il>)
   }
 
   return (
