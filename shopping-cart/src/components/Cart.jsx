@@ -15,7 +15,7 @@ export const Cart = () => {
         alt={title}
       />
       <div>
-        <strong>&{title}</strong> - ${price}
+        <strong>{title}</strong> - ${price}
       </div>
 
       <footer>
